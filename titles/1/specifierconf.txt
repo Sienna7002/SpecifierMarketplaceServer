@@ -1,0 +1,14 @@
+ConfType= Specifier2.1+
+ConfDesignedFor= Specifier2.2
+ConfDev= "7002"
+ConfVer= "1.0"
+ConfName= "Simplicity"
+ConfDesc= "Cool config that only shows in my opinion, the best outputs Specifier has at the moment. Also a nice homage to the Macintosh with the title!"
+SpecifierArguments:
+topString= "Here is the info about your Macintosh:"
+cpuModel
+gpuModel
+osVersion
+macModel
+macMemory
+macStorage
