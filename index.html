@@ -3,20 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index Page</title>
+    <title>Specifier Marketplace</title>
+        <style>
+        #message {
+            font-size: 1.5em;
+            color: #333;
+        }
+        #image {
+            display: none;
+            margin-top: 20px;
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
     <script>
         window.onload = function() {
             const urlParams = new URLSearchParams(window.location.search);
             const client = urlParams.get('client');
             if (client === 'specifierpro') {
                 document.getElementById('message').textContent = 'SUCCESS';
+                document.getElementById('image').style.display = 'none';
             } else {
-                document.getElementById('message').textContent = 'OOOPS... you arent supposed to access the Marketplace this way. Try accessing it with Specifier Pro';
+                document.getElementById('message').textContent = 'Uh oh... you arent supposed to access the Marketplace this way. Try accessing it with Specifier Pro';
+                document.getElementById('image').style.display = 'block';
             }
         }
     </script>
 </head>
+</head>
 <body>
-    <div id="message">Fail</div>
+    <div id="message">Uh oh... you arent supposed to access the Marketplace this way. Try accessing it with Specifier Pro</div>
+    <img id="image" src="https://example.com/path/to/your/image.jpg" alt="Access Denied Image">
 </body>
+</html>
 </html>
