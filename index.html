@@ -1,1 +1,22 @@
-SUCCESS
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+    <script>
+        window.onload = function() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const client = urlParams.get('client');
+            if (client === 'specifierpro') {
+                document.getElementById('message').textContent = 'SUCCESS';
+            } else {
+                document.getElementById('message').textContent = 'OOOPS... you arent supposed to access the Marketplace this way. Try accessing it with Specifier Pro';
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="message">Fail</div>
+</body>
+</html>
